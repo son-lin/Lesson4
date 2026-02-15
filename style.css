@@ -3,7 +3,6 @@
  @import url('fonts/main_font.css');
 
         * {
-            /* Сбрасывание стандартных стилей и добавление шрифтов */
             margin: 0;
             font-family: 'StratosSkyeng', sans-serif;
             
@@ -12,8 +11,8 @@
 
         .image-grid {
             display: grid;
-            grid-template-columns: 1fr 1fr; /* 2 колонки */
-            grid-template-rows: 1fr 1fr;   /* 2 строки */
+            grid-template-columns: 1fr 1fr; 
+            grid-template-rows: 1fr 1fr;   
             gap: 10px;
             max-width: 800px;
             margin: auto ; 
@@ -21,7 +20,7 @@
             
         }
 
-        /* Стили для картинок в сетке */
+       
         .image-grid img {
             width: 800px;
             height: auto;
@@ -30,7 +29,7 @@
             box-shadow: 0 8px 25px rgba(0,0,0,0.15);
         }
 
-            /*Основной контент отодвигаем от кнопок */
+            
         .main-content {
             
             padding-bottom: 40px;
@@ -41,15 +40,14 @@
 
         
         .content {
-            /* Эти два свойства нужны чтобы фон подстраивался на весь экран */
             background-image:url(./images/background.png);
             background-size: cover;
             min-height: 100vh;
-            /* Не повторяется и по центру */
+           
             background-repeat: no-repeat;
             background-position: center;
-            /* Пиши свой код ниже */
-            padding: 140px 0 40px 0; /* Защита от кнопок */
+           
+            padding: 140px 0 40px 0; 
             background-color: rgba(240, 248, 255, 0.95);
             position: relative;
             
@@ -66,14 +64,13 @@
        
 
 
-        /* Класс для расположения элементов в 1 ряд */
+      
         .in-one-line {
             display: flex;
-            /* Отступ между элементами */
             gap: 5px;
         }
         
-        /* Класс для центрирования страницы */
+
         .center {
             padding-left: calc(50% - 500px);  
             padding-right: calc(50% - 500px);
@@ -85,7 +82,7 @@
         
         h1, h2, p {
            text-align: left;
-           width: 100%; /* Использует всю ширину 800px контейнера */
+           width: 100%; 
            margin-left: auto;
            margin-right: auto;
         }
@@ -128,8 +125,7 @@
             
            
         }
-
-        /* Стили для картинки */
+ 
         img {
             border-radius: 12px; 
             box-shadow: 0 8px 25px rgba(0,0,0,0.15);
@@ -144,7 +140,6 @@
 
         }
 
-        /* Стили для ссылок */
         .nav-next {
             display: block; 
             background-color: #894AFF; 
@@ -218,12 +213,12 @@
 
         }
 
-         /* ДЛЯ ПЕРВОЙ СТРАНИЦЫ */
+     
         .hero-layout {
             display: flex;
             margin-left: 400px;
-            gap: 5px; /* Расстояние между картинкой и текстом */
-            margin: 0 auto; /*отступ сверху/снизу */
+            gap: 5px; 
+            margin: 0 auto; 
             padding: 0;
             max-width: 800px;
             width: 100%;
@@ -232,7 +227,7 @@
     
         }
 
-        /*  КАРТИНКА СЛЕВА*/
+     
         .hero-image {
             flex: 0 0 350px;
             text-align: left;
@@ -246,15 +241,15 @@
             object-fit: cover;
             border-radius: 12px;
             box-shadow: 0 8px 25px rgba(0,0,0,0.15);
-            margin: 0; /* отступ картинки */
+            margin: 0;
         }
 
-        /*  ТЕКСТ СПРАВА*/
+        
         .hero-text {
             flex: 1;
             width: 200px;
             text-align: left;
-            margin: 0 !important; /*отступ текста */
+            margin: 0 !important; 
             padding: 0;
         }
 
@@ -273,5 +268,6 @@
     
 
         
+
 
 
