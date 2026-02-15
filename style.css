@@ -42,7 +42,7 @@
         
         .content {
             /* Эти два свойства нужны чтобы фон подстраивался на весь экран */
-            background-image:url(./images/background.jpg);
+            background-image:url(./images/background.png);
             background-size: cover;
             min-height: 100vh;
             /* Не повторяется и по центру */
@@ -273,4 +273,5 @@
     
 
         
+
 
