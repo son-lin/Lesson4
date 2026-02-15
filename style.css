@@ -1,0 +1,276 @@
+
+ 
+ @import url('fonts/main_font.css');
+
+        * {
+            /* Сбрасывание стандартных стилей и добавление шрифтов */
+            margin: 0;
+            font-family: 'StratosSkyeng', sans-serif;
+            
+        }
+       
+
+        .image-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr; /* 2 колонки */
+            grid-template-rows: 1fr 1fr;   /* 2 строки */
+            gap: 10px;
+            max-width: 800px;
+            margin: auto ; 
+            padding: 0 20px;  
+            
+        }
+
+        /* Стили для картинок в сетке */
+        .image-grid img {
+            width: 800px;
+            height: auto;
+            object-fit: cover;
+            border-radius: 12px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+
+            /*Основной контент отодвигаем от кнопок */
+        .main-content {
+            
+            padding-bottom: 40px;
+            margin-top: 0 !important;
+
+        }
+
+
+        
+        .content {
+            /* Эти два свойства нужны чтобы фон подстраивался на весь экран */
+            background-image:url(./images/background.jpg);
+            background-size: cover;
+            min-height: 100vh;
+            /* Не повторяется и по центру */
+            background-repeat: no-repeat;
+            background-position: center;
+            /* Пиши свой код ниже */
+            padding: 140px 0 40px 0; /* Защита от кнопок */
+            background-color: rgba(240, 248, 255, 0.95);
+            position: relative;
+            
+        }
+
+        .content-center {
+            padding-left: calc(50% - 500px);  
+            padding-right: calc(50% - 500px);
+            width: 800px;             
+            max-width: 90vw;           
+            margin: 0 auto;            
+            text-align: left; 
+        }
+       
+
+
+        /* Класс для расположения элементов в 1 ряд */
+        .in-one-line {
+            display: flex;
+            /* Отступ между элементами */
+            gap: 5px;
+        }
+        
+        /* Класс для центрирования страницы */
+        .center {
+            padding-left: calc(50% - 500px);  
+            padding-right: calc(50% - 500px);
+            margin-top: 20px;
+            text-align: left;
+            margin: 0 auto;
+            
+        }
+        
+        h1, h2, p {
+           text-align: left;
+           width: 100%; /* Использует всю ширину 800px контейнера */
+           margin-left: auto;
+           margin-right: auto;
+        }
+
+        /* Стили для текста */
+        h1 {
+            color: #2c3e50;
+            font-size: 24px;
+            margin-bottom: 20px;
+            text-align: left; 
+            width: 800px;
+            margin-top: 20px;
+            margin-left: auto;
+            margin-right: auto;
+            
+        }
+
+        h2 {
+            color: #34495e;
+            font-size: 24px; 
+            margin-bottom: 15px;
+            text-align: left; 
+            width: 800px;
+            margin-top: 20px;
+            margin-left: auto;
+            margin-right: auto;
+           
+        }
+
+        p {
+            color: #555;
+            font-size: 22px;
+            line-height: 1.6;
+            max-width: 800px;
+            text-align: left;
+            width: 800px;
+            margin-top: 20px;
+            margin-left: auto;
+            margin-right: auto;
+            
+           
+        }
+
+        /* Стили для картинки */
+        img {
+            border-radius: 12px; 
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+            max-width: 300px;
+            height: auto;
+            width: 45%; 
+            margin-top: 50px; 
+            
+
+
+        
+
+        }
+
+        /* Стили для ссылок */
+        .nav-next {
+            display: block; 
+            background-color: #894AFF; 
+            color: white; 
+            padding: 11px 30px; 
+            border-radius: 50px; 
+            text-decoration: none; 
+            font-size: 38px; 
+            position: absolute; 
+            top: 20px;
+            right: 20px; 
+           
+        }
+
+        .nav-prev {  
+            display: block;
+            background-color: #894AFF;
+            color: white;
+            padding: 11px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-size: 38px;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        
+          
+        }
+
+        .nav-home {
+            display: block;
+            background-color: #894AFF;
+            color: white;
+            padding: 11px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-size: 38px;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            
+            
+        }
+
+        a:hover {
+            color: #ffffff;
+        }
+        li {
+            font-size: 18px;
+        }
+
+       
+
+        .listE1 {
+            text-align: left;
+            font-size: 22px;
+            padding-bottom: 24px;
+        }
+        .in-one-line { 
+            display: flex; 
+            gap: 32px; 
+            justify-content: center; 
+        }
+        li, .name, .main-img, .main-text, .List-title, .listE1 { 
+            text-align:left;
+            width: 800px;
+            margin-top: 20px;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 22px;
+
+        }
+
+         /* ДЛЯ ПЕРВОЙ СТРАНИЦЫ */
+        .hero-layout {
+            display: flex;
+            margin-left: 400px;
+            gap: 5px; /* Расстояние между картинкой и текстом */
+            margin: 0 auto; /*отступ сверху/снизу */
+            padding: 0;
+            max-width: 800px;
+            width: 100%;
+            align-items: self-start;
+
+    
+        }
+
+        /*  КАРТИНКА СЛЕВА*/
+        .hero-image {
+            flex: 0 0 350px;
+            text-align: left;
+            margin: 0; /* отступ */
+            padding: 0;
+        }
+
+        .hero-image img {
+            width: 400px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 12px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+            margin: 0; /* отступ картинки */
+        }
+
+        /*  ТЕКСТ СПРАВА*/
+        .hero-text {
+            flex: 1;
+            width: 200px;
+            text-align: left;
+            margin: 0 !important; /*отступ текста */
+            padding: 0;
+        }
+
+        
+
+         
+
+        
+
+
+        
+        
+        
+
+
+    
+
+        
+
